@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: skybox-postgres
+    environment:
+      POSTGRES_DB: skybox
+      POSTGRES_USER: skybox_user
+      POSTGRES_PASSWORD: skybox_pass
+      TZ: UTC
+    ports:
+      - "5432:5432"
